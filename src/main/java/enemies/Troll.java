@@ -9,4 +9,8 @@ public class Troll extends Enemy{
         return 2;
     }
 
+    public void defendSelf(int damage){
+        gainHealth(damage);
+    }
+
 }

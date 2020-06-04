@@ -21,4 +21,13 @@ public class Player {
     public void setHealthPoints(int healthPoints) {
         this.healthPoints = healthPoints;
     }
+
+    public void takeDamage(int damage){
+        healthPoints -= damage;
+    }
+
+    public void gainHealth(int damage){
+        healthPoints += damage;
+    }
+
 }

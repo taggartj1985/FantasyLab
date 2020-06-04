@@ -29,4 +29,11 @@ public class DragonTest {
     public void canAttack(){
         assertEquals(10, dragon.attack());
     }
+
+    @Test
+    public void canProtectDamage(){
+        dragon.takeDamage(10);
+        dragon.defendSelf(5);
+        assertEquals(25, dragon.getHealthPoints());
+    }
 }

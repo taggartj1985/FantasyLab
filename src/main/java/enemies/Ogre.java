@@ -8,4 +8,8 @@ public class Ogre extends Enemy{
     public int attack(){
         return 10;
     }
+
+    public void defendSelf(int damage){
+        gainHealth(damage);
+    }
 }

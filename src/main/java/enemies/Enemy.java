@@ -1,6 +1,8 @@
 package enemies;
 
-public abstract class Enemy {
+import actions.IDefend;
+
+public abstract class Enemy implements IDefend{
 
     String name;
     int healthPoints;
@@ -28,6 +30,10 @@ public abstract class Enemy {
 
     public void takeDamage(int damage){
         healthPoints -= damage;
+    }
+
+    public void gainHealth(int damage){
+        healthPoints += damage;
     }
 
 }
