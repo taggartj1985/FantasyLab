@@ -29,4 +29,5 @@ public abstract class Enemy {
     public void takeDamage(int damage){
         healthPoints -= damage;
     }
+
 }

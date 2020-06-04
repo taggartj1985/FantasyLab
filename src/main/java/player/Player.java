@@ -1,6 +1,6 @@
 package player;
 
-public abstract class Player {
+public class Player {
 
     String name;
     int healthPoints;
