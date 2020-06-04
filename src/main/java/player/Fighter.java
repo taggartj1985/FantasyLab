@@ -1,8 +1,10 @@
 package player;
 
+import actions.IWeapon;
+import enemies.Enemy;
 import weapon.Weapon;
 
-public abstract class Fighter extends Player{
+public abstract class Fighter extends Player implements IWeapon {
 
     Weapon weapon;
 
@@ -18,6 +20,12 @@ public abstract class Fighter extends Player{
 
     public void setWeapon(Weapon weapon){
         this.weapon = weapon;
+    }
+
+    public void attack(Enemy enemy){
+        if(weapon != null){
+            enemy.takeDamage(weapon.getDamage());
+        }
     }
 
 }
