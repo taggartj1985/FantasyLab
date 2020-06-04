@@ -1,5 +1,7 @@
 package player;
 
+import weapon.Weapon;
+
 public abstract class Fighter extends Player{
 
     Weapon weapon;
