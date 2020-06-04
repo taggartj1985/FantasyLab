@@ -1,6 +1,7 @@
 package spell;
 
 import actions.ISpell;
+import enemies.Enemy;
 
 public abstract class Spell implements ISpell {
 
@@ -27,4 +28,5 @@ public abstract class Spell implements ISpell {
     public void setDamage(int damage) {
         this.damage = damage;
     }
+
 }
