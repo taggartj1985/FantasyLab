@@ -1,10 +1,11 @@
 package player;
 
 import actions.IDefend;
+import actions.ISpell;
 import enemies.Enemy;
 import spell.Spell;
 
-public abstract class Mage extends Player implements IDefend {
+public abstract class Mage extends Player implements IDefend, ISpell {
 
     Spell spell;
 

@@ -1,7 +1,6 @@
 package spell;
 
 import actions.ISpell;
-import enemies.Enemy;
 
 public abstract class Spell implements ISpell {
 
