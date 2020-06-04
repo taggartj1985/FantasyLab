@@ -1,6 +1,8 @@
 package actions;
 
+import enemies.Enemy;
+
 public interface IWeapon {
 
-    public void attack(Enemey enemy);
+    public void attack(Enemy enemy);
 }
